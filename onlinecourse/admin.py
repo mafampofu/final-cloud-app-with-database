@@ -1,14 +1,14 @@
 from django.contrib import admin
 # <HINT> Import any new Models here
-from .models import Course, Lesson, Instructor, Learner , Question, Choice
+from .models import Course, Lesson, Instructor, Learner , Question, Choice , Submission
 
 class QuestionInline(admin.StackedInline):
     model = Question
-    extra = 5
+    extra = 2
 
 class ChoiceInline(admin.StackedInline):
     model = Choice
-    extra = 4
+    extra = 2
 
 class LessonInline(admin.StackedInline):
     model = Lesson
